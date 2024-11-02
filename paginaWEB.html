@@ -1,0 +1,203 @@
+<!DOCTYPE>
+
+<html>
+<head>
+<title>SERVICII DESIGN WEB</title>
+
+
+<link rel="stylesheet" type="text/css" href="stil.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<button class="tablink" onclick="openPage('Home', this, 'white')" id="defaultOpen">PAGINA PRINCIPALA</button>
+<button class="tablink" onclick="openPage('DESPRE NOI', this, 'white')" >DESPRE NOI</button>
+<button class="tablink" onclick="openPage('Contact', this, 'white')">CONTACT</button>
+
+<h1 style="font-size:50px; text-align:center; color:white; Freemono;">SERVICII DESIGN WEB</h1>
+<div id="Home" class="tabcontent" style="padding:0px">
+  <div class="slideshow-container">
+<div class="mySlides fade">
+  
+  <img src="people.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="business.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="web.png" style="width:100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+</div>
+
+
+<div id="DESPRE NOI" class="tabcontent">
+  <h3>DESPRE NOI</h3>
+  <p class="p1">Serviciile noastre nu constau doar in crearea unui site, ci cuprind:</p> 
+  <ul>
+      <li>OPTIMIZARE✔</li>
+      <li>PROMOVARE✔</li>
+      <li>CONSULTANȚĂ✔</li>
+      <li>DOBÂNDIREA IDENTIȚĂȚII BUSINESS-ULUI DUMNEAVOASTRĂ ✔</li>
+  </ul>
+  <p class="p1">Ca si web designer, ajungi sa oferi cele mai bune servicii de promovare si comunicare in online atunci cand stii sa asculti si sa intelegi nevoile business-urilor cu care lucrezi.Noi avem o abordare precisă și focusată pe ceea ce vă doriți, putând crea un site în totalitate cuprinzător și captivant încadrat în totalitate pe șablonul design-ului pe care dumneavoastră vi-l doriți.Oferim servicii diverse si complete de web design si marketing online, insa daca ar fi sa le rezumam la o singura activitate, aceasta ar fi ”afirmarea pe piata de profil a business-urilor mari si mici”. Practic, orice nevoie ar avea afacerea ta, ea isi va gasi solutia oportuna la prima intalnire cu noi.</p>
+  <br>
+  <br>
+  <p class="p1">Puteti alege sablonul dorit:</p>
+  <div class="img">
+    <img src="site.png" width="100%" class="center"/>
+    
+    <div class="desc">Primul șablon</div>
+  </div>
+  
+  <div class="img">
+    
+      <img src="magonline.png" width="100%" class="center"/>
+    
+    <div class="desc">Al doilea șablon</div>
+  </div>
+  
+  <div class="img">
+
+      <img src="site3.png" width="100%" class="center"/>
+    
+    <div class="desc">Al treilea șablon</div>
+  </div>
+  
+  <div class="img">
+    
+      <img src="site4.png" width="100%" class="center"/>
+    
+    <div class="desc">Al patrulea șablon</div>
+  </div>
+
+  <div class="img">
+
+    <img src="site5.png" width="100%" class="center"/>
+
+    <div class="desc">Al cincilea șablon</div>
+</div>
+
+<div class="img">
+
+    <img src="site6.png" width="100%" class="center"/>
+
+    <div class="desc">Al șaselea șablon</div>
+</div>
+
+<div class="img">
+
+    <img src="site7.png" width="100%" class="center"/>
+
+    <div class="desc">Al șaptelea șablon</div>
+</div>
+
+<div class="img">
+
+    <img src="site8.png" width="100%" class="center"/>
+
+    <div class="desc">Al optâlea șablon</div>
+</div>
+
+<p class="p1">Dupa ce alegeti sablonul dorit, noi va creem site-ul mult dorit!</p>
+  
+
+</div>
+
+<div id="Contact" class="tabcontent">
+  
+
+
+  <p class="p1">De ce sa ne contactezi?</p>
+  <img src="contact.png" width="100%" height="100%"/>
+  <p class="p1">Lucreaza cu profesionisti!</p>
+  <p class="p1">E simplu! Găsim soluțiile potrivite afacerii tale și realizăm o platforma captivanta care să atingă obiective clare!</p>
+  
+  <table>
+      <tbody>
+          <tr>
+
+
+        <p class="p1"><td>Nicoleta</td>
+            <td>nicobalea@yahoo.com</td>
+            <td>07xxxxxxxx</td></p>
+            </tr>
+            <tr>
+            <td>Adriana</td>
+            <td>adrianabaleaa13@yahoo.com</td>
+            <td>07xxxxxxxx</td>
+            </tr>
+            <tr>
+            <td>Adrian</td>
+            <td>adybalea@yahoo.com</td>
+            <td>07xxxxxxxx</td>
+            </tr>
+      </tbody>
+  </table>
+</div>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+   
+</body>
+
+</html>
